@@ -1,0 +1,86 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="home"><img src="./assets/images/freshcart-logo.svg" alt="" srcset=""></a>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="home"
+            routerLinkActive="active-link"
+            >Home</a
+          >
+        </li> 
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="cart"
+            routerLinkActive="active-link"
+            >Carts</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="product"
+            routerLinkActive="active-link"
+            >Products</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="categoty"
+            routerLinkActive="active-link"
+            >Categores</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="brand"
+            routerLinkActive="active-link"
+            >Brandes</a
+          >
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link cursor-pointer"
+                ><span (click)="out()">SignOut</span></a>
+            </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

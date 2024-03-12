@@ -1,0 +1,18 @@
+<section>
+  <h1 class="my-3">All Prodact In The Store</h1>
+  <div class="row">
+    <ng-container *ngFor="let item of prodactData">
+      <div class="col-md-2 p-3">
+        <div class="cursor-pointer product">
+          <img
+            height="200"
+            class="w-100"
+            [src]="item.imageCover"
+            [alt]="item.name"
+          />
+          <p class="h5">{{ item.title | cut:2 }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>

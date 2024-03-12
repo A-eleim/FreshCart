@@ -1,0 +1,50 @@
+<section class="bg-main-light rounded-3 my-3 p-3 w-75 mx-auto">
+  <form [formGroup]="userData" (ngSubmit)="sendData()">
+    <div class="my-1">
+      <label for="details">Enter your Details</label>
+      <textarea
+        id="details"
+        class="form-control"
+        formControlName="details"
+      ></textarea>
+      <div
+        class="alert alert-danger"
+        *ngIf="userData.get('details')?.errors && userData.get('details')?.touched"
+      >
+        <p *ngIf="userData.get('details')?.getError('required')">
+          Details is required
+        </p>
+      </div>
+    </div>
+    <div class="my-1">
+      <label for="phone">Enter your PhoneNumber</label>
+      <input
+        type="tel"
+        id="phone"
+        class="form-control"
+        formControlName="phone"
+      />
+      <div
+        class="alert alert-danger"
+        *ngIf="userData.get('phone')?.errors && userData.get('phone')?.touched"
+      >
+        <p *ngIf="userData.get('phone')?.getError('required')">
+          Phone Number is required
+        </p>
+      </div>
+    </div>
+    <div class="my-1">
+      <label for="city">Enter your City</label>
+      <input type="tel" id="city" class="form-control" formControlName="city" />
+      <div
+        class="alert alert-danger"
+        *ngIf="userData.get('city')?.errors && userData.get('city')?.touched"
+      >
+        <p *ngIf="userData.get('city')?.getError('required')">
+          city is required
+        </p>
+      </div>
+    </div>
+    <button class="btn-main my-2">CheckOut</button>
+  </form>
+</section>
